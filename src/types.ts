@@ -6,4 +6,5 @@ export interface Movie {
   name: string
   poster_path: string | null
   title:string
+  overview:string
 }

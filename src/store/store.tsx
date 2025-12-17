@@ -24,6 +24,7 @@ type SearchState = {
   setResults: (r: Movie[]) => void
   performSearch: (q: string) => void
   fetchPopular: () => Promise<void>
+  getSingleMovie:(id:number)=> Movie | null 
  
 }
  
@@ -31,7 +32,7 @@ type SearchState = {
 
 export const useSearchStore = create<SearchState>((set,get) => ({
   query: " ",
-  results: [],
+  results: [] ,
   error:"",
   loading:false,
   setError:(e:string)=>set({error:e}),
@@ -81,8 +82,13 @@ export const useSearchStore = create<SearchState>((set,get) => ({
       set({ results: filtered })
     }, DEBOUNCE_MS)
   },
+  getSingleMovie:(id:number)=>{
+     const { results } = get();
+     console.log(results)
+   
+    return( results?.find((result)=>id==result.id)?? null)
+  }
  
-  
 }))
 
 export default useSearchStore
