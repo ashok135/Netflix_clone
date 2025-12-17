@@ -17,7 +17,7 @@ function MovieCard({ id,name,poster_path,count }: MovieCardProps) {
     <Link to={`/watch/${id}`}>
       <button aria-label={` open the movie ${name} `} key={id}>
         <Card className="p-0 mt-4 group" tabIndex={0}>
-          <div className="w-[200px] relative ">
+          <div className="w-[160px] md:w-[200px]  relative ">
             <img
               src={
                 poster_path
@@ -25,7 +25,7 @@ function MovieCard({ id,name,poster_path,count }: MovieCardProps) {
                   : 'https://image.tmdb.org/t/p/w500/4H1jWsgEQOgTs4KeG5j5BorKMfX.jpg'
               }
               alt=""
-              className="rounded-xl w-full h-[300px] object-cover 
+              className="rounded-xl w-full h-[250px] md:h-[300px] object-cover 
                      transition-transform duration-300 
                      group-hover:scale-105  select-none pointer-events-none"
             />

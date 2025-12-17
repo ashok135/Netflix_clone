@@ -1,4 +1,4 @@
-export interface MovieListProps {
+export interface MovieListProps  {
   movies: Movie[]
 }
 export interface Movie {
