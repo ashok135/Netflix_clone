@@ -60,7 +60,7 @@ const inputRef = useRef<HTMLInputElement | null>(null)
   return (
     <div className="" >
     { !query.trim() ?
-      <div className="py-4 flex justify-between px-2 lg:px-8 items-center contail">  <div className="text-[20px] md:text-[50px] font-bold text-[#ffff]" tabIndex={0}>Nishaflix</div>
+      <div className="py-4 flex justify-between px-2 lg:px-8 items-center contail">  <div className="text-[20px] md:text-[50px] font-bold text-[#ffff]" tabIndex={0}>Netflix</div>
     <div className=" flex flex-row gap-2 p-2" > {search? <input tabIndex={0} className="text-[#ffff] border p-2"
     placeholder="search here"
     ref={inputRef}
