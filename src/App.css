@@ -15,9 +15,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
- 
+@custom-variant dark (&:is(.dark *));
 
-:root {
+@theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -129,15 +129,10 @@
 
 @layer base {
   * {
-    border-color: var(--border);
-    outline-color: var(--ring);
-    outline-width: 2px;
-    outline-style: solid;
-    outline-offset: 2px;
+    @apply border-border outline-ring/50;
   }
   body {
-    background-color: var(--background);
-    color: var(--foreground);
+    @apply bg-background text-foreground;
   }
 }
 
