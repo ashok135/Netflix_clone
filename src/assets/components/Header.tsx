@@ -28,7 +28,7 @@ const inputRef = useRef<HTMLInputElement | null>(null)
   <button aria-label={movie.title}>
           <Card className="p-0" key={movie?.id}>
             <div
-        className="w-[200px] relative p-0 
+        className="w-50 relative p-0 
                     "
       >
         <img
@@ -38,7 +38,7 @@ const inputRef = useRef<HTMLInputElement | null>(null)
               : 'https://image.tmdb.org/t/p/w500/4H1jWsgEQOgTs4KeG5j5BorKMfX.jpg'
           }
           alt=""
-          className="rounded-xl w-full h-[300px] object-cover 
+          className="rounded-xl w-full h-75 object-cover 
                      transition-transform duration-300 
                      group-hover:scale-105"
         />

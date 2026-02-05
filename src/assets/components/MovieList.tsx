@@ -35,9 +35,9 @@ function MovieList({ movies }:MovieListProps) {
         <ChevronLeft size={24} />
       </button>
     
-    <ul ref={sliderRef} className="flex gap-4 overflow-x-auto scrollbar-hide container mx-auto relative container"> 
+    <ul ref={sliderRef} className="flex gap-4 overflow-x-auto scrollbar-hide   mx-auto relative container"> 
        
-      {movies.map((movie:Movie,index:number)=>  (<li key={movie.id} className=" py-2 flex-shrink-0 min-w-[200px]"> 
+      {movies.map((movie:Movie,index:number)=>  (<li key={movie.id} className=" py-2  shrink-0 min-w-50"> 
       <MovieCard id={movie.id} name={movie.name} poster_path={movie.poster_path}  count={index+1}/>
      </li>))}</ul>
            <button

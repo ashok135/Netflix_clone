@@ -1,5 +1,5 @@
 import useSearchStore from '@/store/store'
-import type { Movie,MovieListProps} from '../types'
+import type { Movie, } from '../types'
 import MovieCard from '@/assets/components/MovieCard'
 import { useEffect, useRef, useState } from 'react'
  
@@ -50,7 +50,7 @@ useEffect(()=>{
 
   return (
     <div className=" ">
-      <div className='absolute w-full top-0 fixed z-50'>
+      <div className='  w-full top-0 fixed z-50'>
         <h2 className="text-white text-center text-[30px] md:text-[60px] font-bold bg-[#C90100] p-4  ">
        Current Movies  {movieData.length}
            
@@ -66,7 +66,7 @@ useEffect(()=>{
                 poster_path={movie.poster_path}
                 count={null}
               />
-              <h3 className="text-white  max-w-[150px] lg:max-w-[180px] break-words">
+              <h3 className="text-white  max-w-37 lg:max-w-35 wrap-break-word">
                 {movie.title}
               </h3>
             </div>

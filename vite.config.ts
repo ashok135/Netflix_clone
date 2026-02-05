@@ -15,6 +15,6 @@ export default defineConfig({
   server: {
     host: true,
   },
-  base: "/Netflix_clone/",
+  base: "/",
   
 })
